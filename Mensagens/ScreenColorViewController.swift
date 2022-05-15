@@ -6,13 +6,11 @@ class ScreenColorViewController: BaseViewController {
     @IBOutlet weak var viBorder: UIView!
     @IBOutlet weak var swWhiteBorder: UISwitch!
     @IBOutlet weak var btchangeButton: UIButton!
+    @IBOutlet weak var viSwitcher: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        changeButton()
-        lbMessage.text = message.text
-        lbMessage.textColor = message.textColor
-        lbMessage.backgroundColor = message.backgroundColor
+        setup()
     }
     
     private func changeButton() {
@@ -32,6 +30,15 @@ class ScreenColorViewController: BaseViewController {
         let vc = segue.destination as! ResultViewController
         vc.message = message
         vc.useWhiteBorder = swWhiteBorder.isOn
+    }
+    
+    private func setup() {
+        changeButton()
+        lbMessage.text = message.text
+        lbMessage.textColor = message.textColor
+        lbMessage.backgroundColor = message.backgroundColor
+        viSwitcher.backgroundColor = .lightGray
+        viSwitcher.layer.cornerRadius = 16
     }
     
     @IBAction func changeBorder(_ sender: UISwitch) {

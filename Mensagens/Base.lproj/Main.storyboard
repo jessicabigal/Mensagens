@@ -163,27 +163,28 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWl-Ur-4OS">
-                                <rect key="frame" x="0.0" y="472" width="375" height="95"/>
+                                <rect key="frame" x="163" y="499" width="224" height="60"/>
                                 <subviews>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WpM-uv-fpu">
-                                        <rect key="frame" x="318" y="32" width="51" height="31"/>
-                                        <connections>
-                                            <action selector="changeBorder:" destination="baW-qB-pkc" eventType="valueChanged" id="jXF-SL-j31"/>
-                                        </connections>
-                                    </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usar borda branca" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0e-Xu-Xpy">
-                                        <rect key="frame" x="175" y="37.5" width="135" height="20"/>
+                                        <rect key="frame" x="8" y="20" width="135" height="20"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WpM-uv-fpu">
+                                        <rect key="frame" x="151" y="14.5" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="changeBorder:" destination="baW-qB-pkc" eventType="valueChanged" id="jXF-SL-j31"/>
+                                        </connections>
+                                    </switch>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="P0e-Xu-Xpy" firstAttribute="centerY" secondItem="xWl-Ur-4OS" secondAttribute="centerY" id="5D5-IF-Jrj"/>
                                     <constraint firstItem="WpM-uv-fpu" firstAttribute="leading" secondItem="P0e-Xu-Xpy" secondAttribute="trailing" constant="8" id="Fm5-Eh-106"/>
-                                    <constraint firstItem="WpM-uv-fpu" firstAttribute="centerY" secondItem="xWl-Ur-4OS" secondAttribute="centerY" id="fDf-Ki-Ep2"/>
-                                    <constraint firstItem="P0e-Xu-Xpy" firstAttribute="centerY" secondItem="xWl-Ur-4OS" secondAttribute="centerY" id="pgj-NU-xBW"/>
-                                    <constraint firstAttribute="trailing" secondItem="WpM-uv-fpu" secondAttribute="trailing" constant="8" id="zho-7b-cpC"/>
+                                    <constraint firstItem="P0e-Xu-Xpy" firstAttribute="leading" secondItem="xWl-Ur-4OS" secondAttribute="leading" constant="8" id="TxD-y6-i90"/>
+                                    <constraint firstAttribute="height" constant="60" id="aS8-oo-j5F"/>
+                                    <constraint firstItem="WpM-uv-fpu" firstAttribute="centerY" secondItem="xWl-Ur-4OS" secondAttribute="centerY" id="eJo-xv-3td"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gr-zU-vkM">
@@ -202,15 +203,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="FOq-QF-Jxz" firstAttribute="trailing" secondItem="hh3-Lg-U6s" secondAttribute="trailing" constant="25" id="6dA-yX-lux"/>
+                            <constraint firstItem="xWl-Ur-4OS" firstAttribute="trailing" secondItem="FOq-QF-Jxz" secondAttribute="trailing" constant="12" id="A8n-Il-pcR"/>
                             <constraint firstItem="4gr-zU-vkM" firstAttribute="leading" secondItem="FOq-QF-Jxz" secondAttribute="leading" constant="16" id="KFy-v1-XfB"/>
                             <constraint firstItem="FOq-QF-Jxz" firstAttribute="bottom" secondItem="4gr-zU-vkM" secondAttribute="bottom" constant="36" id="QXf-9y-gY9"/>
+                            <constraint firstItem="4gr-zU-vkM" firstAttribute="top" secondItem="xWl-Ur-4OS" secondAttribute="bottom" constant="16" id="Yte-NW-p1t"/>
+                            <constraint firstItem="xWl-Ur-4OS" firstAttribute="leading" secondItem="FOq-QF-Jxz" secondAttribute="leading" priority="250" constant="163" id="clE-ra-kVQ"/>
                             <constraint firstItem="hh3-Lg-U6s" firstAttribute="leading" secondItem="FOq-QF-Jxz" secondAttribute="leading" constant="25" id="dQJ-od-UWn"/>
-                            <constraint firstItem="xWl-Ur-4OS" firstAttribute="top" secondItem="hh3-Lg-U6s" secondAttribute="bottom" constant="48" id="gfh-28-Wr2"/>
                             <constraint firstItem="hh3-Lg-U6s" firstAttribute="top" secondItem="FOq-QF-Jxz" secondAttribute="top" constant="20" id="guk-j0-SrF"/>
                             <constraint firstItem="FOq-QF-Jxz" firstAttribute="trailing" secondItem="4gr-zU-vkM" secondAttribute="trailing" constant="16" id="hwC-YZ-KpG"/>
-                            <constraint firstItem="4gr-zU-vkM" firstAttribute="top" secondItem="xWl-Ur-4OS" secondAttribute="bottom" constant="8" id="iRV-xK-IMJ"/>
-                            <constraint firstItem="xWl-Ur-4OS" firstAttribute="leading" secondItem="FOq-QF-Jxz" secondAttribute="leading" id="pEy-tz-2JJ"/>
-                            <constraint firstItem="xWl-Ur-4OS" firstAttribute="trailing" secondItem="FOq-QF-Jxz" secondAttribute="trailing" id="ujN-Sy-oZT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Cor da tela" id="Tgm-W7-14q">
@@ -225,11 +225,12 @@
                         <outlet property="lbMessage" destination="lI7-jy-qur" id="9ow-6b-ntg"/>
                         <outlet property="swWhiteBorder" destination="WpM-uv-fpu" id="AJB-m9-Zls"/>
                         <outlet property="viBorder" destination="hh3-Lg-U6s" id="pNT-Iu-cdM"/>
+                        <outlet property="viSwitcher" destination="xWl-Ur-4OS" id="4n7-HT-Ig7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bVW-27-K1k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1980" y="133"/>
+            <point key="canvasLocation" x="1980" y="132.68365817091455"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="idx-DO-QI4">
