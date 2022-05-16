@@ -37,8 +37,7 @@ class ScreenColorViewController: BaseViewController {
         lbMessage.text = message.text
         lbMessage.textColor = message.textColor
         lbMessage.backgroundColor = message.backgroundColor
-        viSwitcher.backgroundColor = .lightGray
-        viSwitcher.layer.cornerRadius = 16
+        viSwitcher.backgroundColor = .white.withAlphaComponent(0.5)
     }
     
     @IBAction func changeBorder(_ sender: UISwitch) {
